@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hospital_management_system.BillsPageController">
+   <children>
+      <Label layoutX="343.0" layoutY="30.0" text="Patient Bills">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="patientName" layoutX="239.0" layoutY="75.0" prefHeight="25.0" prefWidth="277.0" text="Patient Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="patientId" layoutX="239.0" layoutY="119.0" prefHeight="25.0" prefWidth="277.0" text="Patient ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="billsTable" layoutX="13.0" layoutY="158.0" prefHeight="368.0" prefWidth="774.0">
+        <columns>
+          <TableColumn prefWidth="387.0" text="Service Items" />
+          <TableColumn prefWidth="386.0" text="Amount (INR)" />
+        </columns>
+      </TableView>
+      <Label layoutX="71.0" layoutY="533.0" prefHeight="25.0" prefWidth="220.0" text="Total Amount :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="gotoPatientDashboard" onAction="#onGotoDashboardClick" layoutX="328.0" layoutY="583.0" mnemonicParsing="false" text="Goto Patient Dashboard" />
+      <Label layoutX="472.0" layoutY="537.0" prefHeight="25.0" prefWidth="220.0" text="Status :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
